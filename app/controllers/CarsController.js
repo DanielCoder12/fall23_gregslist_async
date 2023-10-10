@@ -6,6 +6,7 @@ import { Pop } from "../utils/Pop.js";
 import { setHTML } from "../utils/Writer.js";
 
 function _drawCars() {
+
   console.log('DRAWING CARS');
   const cars = AppState.cars
   let content = ''
@@ -20,7 +21,7 @@ function _drawCarForm() {
 }
 
 export class CarsController {
-  constructor () {
+  constructor() {
     console.log('cars controller loaded');
     this.getCars()
     _drawCarForm()
